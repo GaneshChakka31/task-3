@@ -1,0 +1,647 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-image:url("../Images/res1.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+h3{
+    text-align: center;
+    font-size: x-large;
+}
+button{
+    margin: 50px;
+    padding: 50px;  
+}
+ul {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: flex;
+    justify-content:right;
+    padding-right: 40px;
+}
+ul li{
+    list-style-type:none;
+    padding: 9px 9px;
+    display: flex;
+    background-color: white;
+    box-shadow: 5px 10px 8px rgb(115, 115, 115);   
+}
+
+ul li a{
+font-size: 25px;
+color:#05ed37;
+text-decoration: none;
+padding: 15px;
+text-align:end;
+font-style: italic;
+display: flex;
+padding-top: 2%;
+}
+
+ul li a:hover{
+    color:green;
+    text-decoration:underline green;
+}
+ .head h1{
+    color: whitesmoke;
+    padding-top: 15%;
+    padding-right: 2%;
+}
+h2{
+    font-size:500px;
+    color: rgb(241, 12, 12);
+    padding-left: 3%;
+}
+.image img {
+    position: absolute;
+    height: 35%;
+    width: 20%;
+    left:33%;
+    transform: translate(30%);
+    bottom:30%;
+    border-radius:50%;
+    opacity: 0.5;      
+}
+
+.image img:hover{
+opacity: 2.0;
+box-shadow: 5px 10px 8px whitesmoke;
+outline: 3px solid whitesmoke;
+cursor: pointer;
+}
+#clearfix{
+    display: block;
+    content: "";
+    clear: both;
+}
+  .logo img {
+    position: absolute;
+    height: 19%;
+    width: 15%;
+    /* left: 2%; */
+    border-radius:30%;
+    padding-left: 2%;   
+ } 
+
+.footer{
+
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width:1024px){
+    h1{
+        padding-top: 5%
+    }
+
+    .footer{
+        font-size: large
+    }
+    .footer a{
+        font-size:x-large;
+        padding: 10px;
+    }  
+}
+
+.food-items{
+    display: grid;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    border: 2px solid whitesmoke;
+    transition: 2s ease-in-out;
+    width: 30%;
+    height: 80%;
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/391/200/desktop-wallpaper-wide-q-plain-best-plain.jpg);
+    float: left;   
+}
+.food-items:nth-child(2){
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius:20px;
+    cursor: pointer;
+}
+.food-items button{
+    background-color:#43c94a;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.food-items button:hover{
+    background-color:rgb(5, 174, 8);
+}
+
+h5{
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+#container{
+    background-color: gray;
+    height: 350px;
+    width: 100%;
+    
+}
+#menu{
+    display: grid;
+    position: relative;
+    width: 25%;
+    float: left;
+    color: white;
+    padding-left: 5%;
+    text-decoration:none;
+}
+#menu h4{
+    text-decoration:none;
+    font-size: 30px;
+}
+
+#menu li{
+    list-style-type:none;
+    font-size: 20px;
+}
+
+#links{
+    width: 25%;
+    height: 200px;
+    color: white;
+    float: left;
+    
+}
+#links h4{
+   text-decoration:none;
+    font-size: 30px;
+}
+
+#links li{
+    list-style-type:none;
+    font-size: 20px;
+}
+
+
+#Branchs{
+    width: 25%;
+    list-style-type: none;
+    float: left;
+    color: white;
+}
+#Branchs h4{
+    text-decoration:inline;
+    font-size: 30px;
+}
+
+#Branchs li{
+    list-style-type: none;
+    font-size: 20px;
+}
+#logo img{
+    border-radius: 10px 10px 10px 10px;
+  
+}
+
+#menu li:hover{
+    color: orange;
+    cursor:default;
+}
+#links li:hover{
+    color: orange;
+    cursor:default;
+}
+#branchs li:hover{
+    color: orange;
+    cursor:default;
+}
+
+@media only screen and (max-width:320px){
+    .heading h3{
+        color:white;
+        text-shadow: 5px 2px 2px black;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .logo img{
+        padding-top: 50px;
+        height: 30%;
+        width: 20%;
+        
+    }
+
+    
+
+   
+
+    .head h1{
+        padding-top:80%;
+    }
+
+    h2{
+        font-family:'Times New Roman', Times, serif;
+    }
+
+    .food-items:nth-child(2){
+        margin-left: 0%;
+        margin-right: 0%;
+        
+    }
+
+    .image img{
+        width: 30%;
+        
+    }
+
+    ul li a{
+        color: red;
+        padding-left: 0%;
+        padding: 0%;
+        font-size:smaller;
+    }
+
+    h2{
+        font-size: large;
+    }
+
+    .food-items img{
+        height: 70%;
+        
+    }
+
+    .food-items{
+        height: 100%;
+        width: 100%;  
+    }
+
+    .food-items h5{
+        font-size: large;
+    }
+}
+
+
+
+@media only screen and (min-width:320px){
+    .heading h3{
+        color:white;
+        text-shadow: 5px 2px 2px black;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .logo img{
+        padding-top: 50px;
+        height: 30%;
+        width: 20%;
+        
+    }
+    .footer a{
+       margin-top: 90%;
+    }
+
+    .head h1{
+        padding-top:80%;
+    }
+
+    h2{
+        font-family:'Times New Roman', Times, serif;
+    }
+
+    .food-items:nth-child(2){
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+    .image img{
+        width: 30%;   
+    }
+    ul li a{
+        color: red;
+        padding-left: 0%;
+        padding: 0%;
+        font-size:smaller;
+    }
+    h2{
+        font-size: large;
+    }
+
+    
+    .food-items img{
+        height: 70%;
+        padding-top: 2%;
+         
+    }
+    .food-items{
+        height: 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    
+    .food-items h5{
+        font-size: large;
+    }
+    
+
+    #menu{
+        display: grid;
+        position: relative;
+        width: 100%;
+        float: left;
+        color: white;
+        padding-left: 5%;
+    }
+    #menu h4{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+    }
+    
+    #menu li{
+        list-style-type: none;
+        font-size: 20px;
+    }
+    
+    #links{
+        width: 100%;
+        background-color: gray;
+        height: 200px;
+        color: white;
+        float: left;
+        padding-left: 5%;
+        
+    }
+    #links h4{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+    }
+    
+    #links li{
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    #links li a{
+        list-style-type: none;
+        font-size: 20px;
+        text-decoration: none;
+        
+    }
+    
+    
+    #Branchs{
+        width: 100%;
+        background-color: gray;
+        list-style-type: none;
+        float: left;
+        color: white;
+        padding-left: 5%;
+    }
+    #Branchs h4{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+    }
+    
+    #Branchs li{
+        list-style-type: none;
+        font-size: 20px;
+    }
+    #logo img{
+        padding-left: 10px;
+        padding-top: 5%;
+        border-radius: 20%;
+       
+        
+    }
+
+}
+
+@media only screen and (min-width:768px){
+    .heading h3{
+        color:white;
+        text-shadow: 5px 2px 2px black;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .logo img{
+        padding-top: 40px;
+        height: 35%;
+        width: 20%;
+        border-radius: 20px 20px; 
+    }
+    .food-items:nth-child(2){
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+    .head h1{
+        padding-top:20%;
+    }
+    h2{
+        font-size: 30px;
+    }
+
+    .image img{
+        height: 200px;
+        top: 30%;
+    }
+    
+    .food-items img{
+        height: 90%;
+    }
+
+    .food-items{
+        height: 100%;
+        width: 30%;
+    }
+
+    .food-items h5{
+        font-size: 25px;
+    }
+    
+    ul li {
+        font-size: large;
+    }
+
+    #menu{
+        display: grid;
+        position: relative;
+        width: 25%;
+        float: left;
+        color: white;
+        padding-left: 5%;
+    }
+    #menu h4{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+    }
+    
+    #menu li{
+        list-style-type: none;
+        font-size: 24px;
+    }
+    
+    #links{
+        width: 25%;
+        background-color: gray;
+        height: 200px;
+        color: white;
+        float: left;
+        
+    }
+    #links h4{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+    }
+    
+    #links li a{
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 25px;
+    }
+   
+    
+    
+    #Branchs{
+        width: 25%;
+        background-color: gray;
+        list-style-type: none;
+        float: left;
+        color: white;
+    }
+    #Branchs h4{
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+    }
+    
+    #Branchs li{
+        list-style-type: none;
+        font-size: 25px;
+    }
+    #logo img{
+        width: 25%;
+        padding-left: 3%;
+        height: auto;
+        border-radius: 20%;
+       
+        
+    }
+
+    #container{
+        background-color: gray;
+        height: 450px;
+        width: 100%;
+        
+    }
+
+    .footer a{
+        padding-top: 0%;
+     }
+}
+
+@media only screen and (min-width:1024px){
+    .heading h3{
+        color:white;
+        text-shadow: 5px 2px 2px black;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .logo img{
+        padding-top: 0px;
+        border-radius: 30px; 
+        height:23%;
+        width: 13%;
+    }
+    .head h1{
+        font-size: 50px;
+    }
+
+    ul li a{
+        padding: 0px;
+
+    }
+    ul li {
+        font-size: large;
+    }
+
+    .image img{
+        height: 40%;
+        width: 20%;
+        
+    }
+
+    .image{
+        padding-left: 50%;
+    }
+
+    .food-items img{
+        height: 80%;
+        
+    }
+
+    .food-items{
+        height: 100%;
+        width: 30%;
+        
+        
+    }
+
+    .food-items h5{
+        font-size: 25px;
+    }
+    
+
+    h2{
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+@media only screen and (min-width:1440px){
+
+ul li a {
+    font-size: 30px;
+}
+
+.logo img{
+    width: 10%;
+    height: 20%;
+}
+#logo img{
+    height: 100%;
+    border-radius: 0%;
+}
+}    
